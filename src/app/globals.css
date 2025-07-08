@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-	@apply bg-[#FFF7F0]
-}
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 *::-webkit-scrollbar {
 	display: none;

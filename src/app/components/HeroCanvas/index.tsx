@@ -1,22 +1,21 @@
 "use client";
 import React from "react";
 import { Canvas } from "@react-three/fiber";
-// import { Plane, PlaneGeometry, Vector3 } from "three";
 
 const HeroCanvas = () => {
-	// const planeRef = useRef();
-	// const myPlane = new Plane(new Vector3(0, 1, 0), 0);
 	return (
-		<div className="absolute top-0 -z-10 h-svh w-svw">
-			<Canvas>
+		<div className="absolute top-0 h-svh w-svw">
+			<Canvas camera={{ position: [2, 15, 15], fov: 50 }} shadows>
 				<ambientLight intensity={0.3} />
 				<directionalLight />
-				<mesh>
+				<mesh position={[7, 2, 0]}>
 					<sphereGeometry args={[2]} />
-					<meshPhongMaterial wireframe color={"red"} />
+					<meshPhongMaterial color={"red"} />
 				</mesh>
-				<mesh></mesh>
-				{/* <planeHelper args={[myPlane]} /> */}
+				<mesh rotation={[-Math.PI / 2, 0, 0]}>
+					<planeGeometry args={[100, 100, 100, 100]} />
+					<meshStandardMaterial wireframe color={"white"} />
+				</mesh>
 			</Canvas>
 		</div>
 	);

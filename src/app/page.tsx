@@ -5,8 +5,8 @@ import Work from "./components/Work";
 
 export default function Home() {
 	return (
-    <main className="h-full">
-      <Nav />
+		<main className="h-full">
+			<Nav />
 			<Hero />
 			<HeroCanvas />
 			<Work />
