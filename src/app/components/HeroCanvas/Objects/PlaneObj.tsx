@@ -2,9 +2,9 @@ import React from "react";
 
 const PlaneObj = () => {
 	return (
-		<mesh rotation={[-Math.PI / 2, 0, 0]}>
-			<planeGeometry args={[100, 100, 100, 100]} />
-			<meshStandardMaterial wireframe color={"white"} />
+		<mesh name="floor" rotation={[-Math.PI / 2, 0, 0]}>
+			<planeGeometry args={[70, 70, 30, 30]} />
+			<meshPhongMaterial wireframe color={"white"} />
 		</mesh>
 	);
 };
