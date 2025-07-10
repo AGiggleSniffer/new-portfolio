@@ -13,25 +13,25 @@ const NavMenu: React.FC<NavMenuProps> = ({ onClose }) => {
 			<nav className="absolute bottom-16 left-12 flex flex-col gap-12">
 				<a
 					href="#work"
-					className="font-extrabold text-5xl md:text-8xl text-black hover:text-gray-700 transition-colors"
+					className="font-extrabold text-5xl xl:text-8xl text-black hover:text-gray-700 transition-colors"
 				>
 					Work
 				</a>
 				<a
 					href="#extras"
-					className="font-extrabold text-5xl md:text-8xl text-black hover:text-gray-700 transition-colors"
+					className="font-extrabold text-5xl xl:text-8xl text-black hover:text-gray-700 transition-colors"
 				>
 					Extras
 				</a>
 				<a
 					href="#interact"
-					className="font-extrabold text-5xl md:text-8xl text-black hover:text-gray-700 transition-colors"
+					className="font-extrabold text-5xl xl:text-8xl text-black hover:text-gray-700 transition-colors"
 				>
 					Interact
 				</a>
 				<a
 					href="#contact"
-					className="font-extrabold text-5xl md:text-8xl text-black hover:text-gray-700 transition-colors"
+					className="font-extrabold text-5xl xl:text-8xl text-black hover:text-gray-700 transition-colors"
 				>
 					Contact
 				</a>
